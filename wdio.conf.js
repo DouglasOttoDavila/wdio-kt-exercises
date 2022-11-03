@@ -110,14 +110,27 @@ exports.config = {
             maxInstances: 1,
             browserName: 'chrome',
             'goog:chromeOptions': {
-            //'--headless', '--disable-gpu', '--window-size=1920,1080' (headless)
+
+            //HEAD MODE (Default - Desktop)
             args: ['--incognito', '--disable-extensions', '--start-maximized'],
-                    excludeSwitches: ['enable-logging'],
-                    //mobileEmulation: { deviceName: 'iPhone 4' }
-                },
+            excludeSwitches: ['enable-logging'],
+            },
+
+            //HEADLESS MODE
+            //Alternative: '--headless', '--disable-gpu', '--window-size=1920,1080' (headless)
+            /* args: ['--headless', '--no-sandbox', '--disable-gpu'],
+            }, */
+
+            //MOBILE HEAD (Default - Mobile)
+            /* args: ['--incognito', '--disable-extensions', '--start-maximized'],
+                excludeSwitches: ['enable-logging'],
+                mobileEmulation: { deviceName: 'iPhone 4' }
+            },
             acceptInsecureCerts: true,
-            port: 4444
+            port: 4444 */
         },
+        
+        //FIREFOX
         /* {
             maxInstances: 1,
             browserName: 'firefox',

@@ -49,6 +49,7 @@ export function fillPersonalInformation(gender, fName, lName, pw, dBirth, mBirth
 export function fillYourAddress() {
     $(address).setValue(TEST_DATA.USER.DEFAULT.address);
     $(city).setValue(TEST_DATA.USER.DEFAULT.city);
+    $(state).click();
     $(state).selectByVisibleText(TEST_DATA.USER.DEFAULT.state);
     $(zip).setValue(TEST_DATA.USER.DEFAULT.zip);
     $(country).selectByVisibleText(TEST_DATA.USER.DEFAULT.country);
